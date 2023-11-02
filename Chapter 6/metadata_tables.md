@@ -54,7 +54,45 @@ Below you'll find example values of each of the metadata tables for reference.
 
 ### all_files table
 
-| content | path     | file_format | spec_id | partition | record_count | file_size_in_bytes | column_sizes | values_counts | null_value_counts | nan_values_counts | lower_bounds | upper_bounds | key_metadata | split_offsets | equality_ids | sort_order_id | readable_metrics |
-|---------|----------|-------------|---------|-----------|--------------|--------------------|--------------|---------------|-------------------|------------------|--------------|--------------|--------------|---------------|--------------|-----------------|
-| 0       | s3://…   | PARQUET      | 0       | {A}       | 8            | 612                | {1 -> 94}    | {1 -> 8}      | {1 -> 0}         | {}               | {1 -> Abigail} | {1 -> Ava}   | null         | null          | null         | null            | 0               |
-| 0       | s3://…   | PARQUET      | 0       | {B}       | 2            | 571                | {1 -> 48}    | {1 -> 2}      | {1 -> 0}         | {}               | {1 -> 0}      | {}           | null         | null          | null         | null            | 0               |
+**PART 1**
+
+| content | path     | file_format | spec_id | partition | record_count | file_size_in_bytes |
+|---------|----------|-------------|---------|-----------|--------------|--------------------|
+| 0       | s3://…   | PARQUET     | 0       | {A}       | 8            | 612                |
+| 0       | s3://…   | PARQUET     | 0       | {B}       | 2            | 571                |
+
+
+**PART 2**
+
+| column_sizes | values_counts | null_value_counts | nan_values_counts |
+|--------------|---------------|-------------------|------------------|
+| {1 -> 94}    | {1 -> 8}      | {1 -> 0}         | {}               |
+| {1 -> 48}    | {1 -> 2}      | {1 -> 0}         | {}               |
+
+**PART 3**
+
+| lower_bounds | upper_bounds | key_metadata | split_offsets | equality_ids | sort_order_id | readable_metrics |
+|--------------|--------------|--------------|---------------|--------------|-----------------|--------|
+| {1 -> Abigail} | {1 -> Ava}   | null         | null          | null         | null            | 0               |
+| {1 -> 0}      | {}           | null         | null          | null         | null            | 0               |
+
+### All Manifests Table
+
+| content | path | length | partition_spec_id | added_snapshot_id | added_data_files_count | existing_data_files_count | deleted_data_files_count | added_delete_files_count | existing_delete_files_count | deleted_delete_files_count | partition_summaries | reference_snapshot_id |
+|---------|------|--------|-------------------|-------------------|------------------------|--------------------------|--------------------------|------------------------|-----------------------------|--------------------------|---------------------|-----------------------|
+| 0       | s3://… | 6515   | 0                 | 8124673682209106082 | 20                        | 0                        | 0                        | 0                      | 0                           | 0                        | [{false, false, A, Z}] | 8124673682209106082   |
+| 0       | s3://… | 6501   | 0                 | 8616861888544170664 | 20                        | 0                        | 0                        | 0                      | 0                           | 0                        | [{false, false, A, Z}] | 8616861888544170664   |
+
+### Refs Table
+
+| name | type | snapshot_id | max_reference_age_in_ms | min_snapshots_to_keep | max_snapshot_age_in_ms | 
+|------|------|-------------|-------------------------|-----------------------|------------------------|
+main | BRANCH | null | null | null | null | null | 1059035530770364194 |
+
+### Entries Table
+
+| status | snapshot_id | sequence_number | data_file |
+|--------|-------------|-----------------|-----------|
+| 1 | 1059035530770364194 | 0 | {0, s3://…/0_0_11.parquet, PARQUET, 0, {N}, 1, 575, {1 -> 36}, {1 -> 1}, {1 -> 0}, {}, {1 -> Natalia}, {1 -> Natalia}, null, null, null, 0} |
+| 1 | 8616861888544170664 | 0 | {0, s3://…/0_0_13.parquet, PARQUET, 0, {R}, 5, 594, {1 -> 70}, {1 -> 5}, {1 -> 0}, {}, {1 -> Rafael}, {1 -> Roberto}, null, null, null, 0} |
+
