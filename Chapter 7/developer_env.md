@@ -162,3 +162,9 @@ Now follow these direction to start up each service (each command should be run 
 - `docker-compose up flink-taskmanager` this will open up a flink instance acting as a task manager
 
 - `docker-compose up dremio` will create an instance of dremio accessible at localhost:9047
+
+## Tear Down
+
+- To turn off all the containers run `docker-compose down`
+
+- To turn off one container at a time run `docker-compose down container_name` using the same names from the startup section.
