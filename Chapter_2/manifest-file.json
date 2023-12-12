@@ -1,0 +1,172 @@
+{
+    "status": 1,
+    "snapshot_id":
+    {
+        "long": 8619686881304977000
+    },
+    "sequence_number": null,
+    "file_sequence_number": null,
+    "data_file":
+    {
+        "content": 0,
+        "file_path": "s3://jason-dremio-product-us-west-2/iceberg-book/iceberg_book.db/orders/data/created_ts_day=2023-03-21/00000-11-b5d3ab5d-1522-43e2-bc61-0560f055bfa1-00001.parquet",
+        "file_format": "PARQUET",
+        "partition":
+        {
+            "created_ts_day":
+            {
+                "int": 19437
+            }
+        },
+        "record_count": 1,
+        "file_size_in_bytes": 1574,
+        "column_sizes":
+        {
+            "array":
+            [
+                {
+                    "key": 1,
+                    "value": 48
+                },
+                {
+                    "key": 2,
+                    "value": 46
+                },
+                {
+                    "key": 3,
+                    "value": 47
+                },
+                {
+                    "key": 4,
+                    "value": 53
+                },
+                {
+                    "key": 5,
+                    "value": 57
+                }
+            ]
+        },
+        "value_counts":
+        {
+            "array":
+            [
+                {
+                    "key": 1,
+                    "value": 1
+                },
+                {
+                    "key": 2,
+                    "value": 1
+                },
+                {
+                    "key": 3,
+                    "value": 1
+                },
+                {
+                    "key": 4,
+                    "value": 1
+                },
+                {
+                    "key": 5,
+                    "value": 1
+                }
+            ]
+        },
+        "null_value_counts":
+        {
+            "array":
+            [
+                {
+                    "key": 1,
+                    "value": 0
+                },
+                {
+                    "key": 2,
+                    "value": 0
+                },
+                {
+                    "key": 3,
+                    "value": 0
+                },
+                {
+                    "key": 4,
+                    "value": 0
+                },
+                {
+                    "key": 5,
+                    "value": 0
+                }
+            ]
+        },
+        "nan_value_counts":
+        {
+            "array":
+            []
+        },
+        "lower_bounds":
+        {
+            "array":
+            [
+                {
+                    "key": 1,
+                    "value": "å\u0001\u0000\u0000\u0000\u0000\u0000"
+                },
+                {
+                    "key": 2,
+                    "value": "ø\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+                },
+                {
+                    "key": 3,
+                    "value": "*<"
+                },
+                {
+                    "key": 4,
+                    "value": "placed"
+                },
+                {
+                    "key": 5,
+                    "value": "Èøje÷\u0005\u0000"
+                }
+            ]
+        },
+        "upper_bounds":
+        {
+            "array":
+            [
+                {
+                    "key": 1,
+                    "value": "å\u0001\u0000\u0000\u0000\u0000\u0000"
+                },
+                {
+                    "key": 2,
+                    "value": "ø\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+                },
+                {
+                    "key": 3,
+                    "value": "*<"
+                },
+                {
+                    "key": 4,
+                    "value": "placed"
+                },
+                {
+                    "key": 5,
+                    "value": "Èøje÷\u0005\u0000"
+                }
+            ]
+        },
+        "key_metadata": null,
+        "split_offsets":
+        {
+            "array":
+            [
+                4
+            ]
+        },
+        "equality_ids": null,
+        "sort_order_id":
+        {
+            "int": 0
+        }
+    }
+}
