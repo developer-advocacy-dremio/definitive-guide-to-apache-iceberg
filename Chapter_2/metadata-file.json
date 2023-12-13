@@ -1,0 +1,160 @@
+{
+    "format-version": 2,
+    "table-uuid": "b39fb9ba-18ac-4c6d-8338-593c62265595",
+    "location": "s3://jason-dremio-product-us-west-2/iceberg-book/iceberg_book.db/orders",
+    "last-sequence-number": 2,
+    "last-updated-ms": 1679439331868,
+    "last-column-id": 5,
+    "current-schema-id": 0,
+    "schemas":
+    [
+        {
+            "type": "struct",
+            "schema-id": 0,
+            "fields":
+            [
+                {
+                    "id": 1,
+                    "name": "order_id",
+                    "required": false,
+                    "type": "long"
+                },
+                {
+                    "id": 2,
+                    "name": "customer_id",
+                    "required": false,
+                    "type": "long"
+                },
+                {
+                    "id": 3,
+                    "name": "order_amount",
+                    "required": false,
+                    "type": "decimal(10, 2)"
+                },
+                {
+                    "id": 4,
+                    "name": "status",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "id": 5,
+                    "name": "created_ts",
+                    "required": false,
+                    "type": "timestamptz"
+                }
+            ]
+        }
+    ],
+    "default-spec-id": 0,
+    "partition-specs":
+    [
+        {
+            "spec-id": 0,
+            "fields":
+            [
+                {
+                    "name": "created_ts_day",
+                    "transform": "day",
+                    "source-id": 5,
+                    "field-id": 1000
+                }
+            ]
+        }
+    ],
+    "last-partition-id": 1000,
+    "default-sort-order-id": 0,
+    "sort-orders":
+    [
+        {
+            "order-id": 0,
+            "fields":
+            []
+        }
+    ],
+    "properties":
+    {
+        "owner": "ec2-user"
+    },
+    "current-snapshot-id": 8619686881304977663,
+    "refs":
+    {
+        "main":
+        {
+            "snapshot-id": 8619686881304977663,
+            "type": "branch"
+        }
+    },
+    "snapshots":
+    [
+        {
+            "sequence-number": 1,
+            "snapshot-id": 8153845014111637777,
+            "timestamp-ms": 1679439324767,
+            "summary":
+            {
+                "operation": "append",
+                "spark.app.id": "application_1679437452433_0003",
+                "added-data-files": "2",
+                "added-records": "2",
+                "added-files-size": "3162",
+                "changed-partition-count": "2",
+                "total-records": "2",
+                "total-files-size": "3162",
+                "total-data-files": "2",
+                "total-delete-files": "0",
+                "total-position-deletes": "0",
+                "total-equality-deletes": "0"
+            },
+            "manifest-list": "s3://jason-dremio-product-us-west-2/iceberg-book/iceberg_book.db/orders/metadata/snap-8153845014111637777-1-624f7d12-62e7-4e38-8583-9e40bdc63335.avro",
+            "schema-id": 0
+        },
+        {
+            "sequence-number": 2,
+            "snapshot-id": 8619686881304977663,
+            "parent-snapshot-id": 8153845014111637777,
+            "timestamp-ms": 1679439331868,
+            "summary":
+            {
+                "operation": "append",
+                "spark.app.id": "application_1679437452433_0003",
+                "added-data-files": "2",
+                "added-records": "2",
+                "added-files-size": "3148",
+                "changed-partition-count": "1",
+                "total-records": "4",
+                "total-files-size": "6310",
+                "total-data-files": "4",
+                "total-delete-files": "0",
+                "total-position-deletes": "0",
+                "total-equality-deletes": "0"
+            },
+            "manifest-list": "s3://jason-dremio-product-us-west-2/iceberg-book/iceberg_book.db/orders/metadata/snap-8619686881304977663-1-a5969634-3cdb-4d66-9630-7849091c8556.avro",
+            "schema-id": 0
+        }
+    ],
+    "statistics":
+    [],
+    "snapshot-log":
+    [
+        {
+            "timestamp-ms": 1679439324767,
+            "snapshot-id": 8153845014111637777
+        },
+        {
+            "timestamp-ms": 1679439331868,
+            "snapshot-id": 8619686881304977663
+        }
+    ],
+    "metadata-log":
+    [
+        {
+            "timestamp-ms": 1679439283526,
+            "metadata-file": "s3://jason-dremio-product-us-west-2/iceberg-book/iceberg_book.db/orders/metadata/00000-c2f323ef-6571-4b86-b6bd-97b6527072b1.metadata.json"
+        },
+        {
+            "timestamp-ms": 1679439324767,
+            "metadata-file": "s3://jason-dremio-product-us-west-2/iceberg-book/iceberg_book.db/orders/metadata/00001-240007c3-5737-4898-ac08-91bbf513a290.metadata.json"
+        }
+    ]
+}

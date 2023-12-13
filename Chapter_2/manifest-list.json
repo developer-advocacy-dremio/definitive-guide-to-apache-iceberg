@@ -1,0 +1,72 @@
+{
+    "manifest_path": "s3://jason-dremio-product-us-west-2/iceberg-book/iceberg_book.db/orders/metadata/a5969634-3cdb-4d66-9630-7849091c8556-m0.avro",
+    "manifest_length": 7283,
+    "partition_spec_id": 0,
+    "content": 0,
+    "sequence_number": 2,
+    "min_sequence_number": 2,
+    "added_snapshot_id": 8619686881304977000,
+    "added_data_files_count": 2,
+    "existing_data_files_count": 0,
+    "deleted_data_files_count": 0,
+    "added_rows_count": 2,
+    "existing_rows_count": 0,
+    "deleted_rows_count": 0,
+    "partitions":
+    {
+        "array":
+        [
+            {
+                "contains_null": false,
+                "contains_nan":
+                {
+                    "boolean": false
+                },
+                "lower_bound":
+                {
+                    "bytes": "íK\u0000\u0000"
+                },
+                "upper_bound":
+                {
+                    "bytes": "íK\u0000\u0000"
+                }
+            }
+        ]
+    }
+}
+{
+    "manifest_path": "s3://jason-dremio-product-us-west-2/iceberg-book/iceberg_book.db/orders/metadata/624f7d12-62e7-4e38-8583-9e40bdc63335-m0.avro",
+    "manifest_length": 7298,
+    "partition_spec_id": 0,
+    "content": 0,
+    "sequence_number": 1,
+    "min_sequence_number": 1,
+    "added_snapshot_id": 8153845014111638000,
+    "added_data_files_count": 2,
+    "existing_data_files_count": 0,
+    "deleted_data_files_count": 0,
+    "added_rows_count": 2,
+    "existing_rows_count": 0,
+    "deleted_rows_count": 0,
+    "partitions":
+    {
+        "array":
+        [
+            {
+                "contains_null": false,
+                "contains_nan":
+                {
+                    "boolean": false
+                },
+                "lower_bound":
+                {
+                    "bytes": "ëK\u0000\u0000"
+                },
+                "upper_bound":
+                {
+                    "bytes": "ìK\u0000\u0000"
+                }
+            }
+        ]
+    }
+}
