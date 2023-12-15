@@ -1,8 +1,9 @@
-# The Definitive Guide to Apache Iceberg - the supporting Github repo
+# The Definitive Guide to Apache Iceberg
+### The Github Repo
 
 Supporting code and files for the O'Reilly book "The Definitive Guide to Apache Iceberg"
 
-Each chapter in book has a folder for supporting documents and resources. Not all chapters need supporting resources so some folders may be empty.
+Each chapter in book has a folder for supporting documents and resources. Not all chapters need supporting resources so some folders may be empty. Find links for each section of this repository below.
 
 ## Resource Table of Contents
 
