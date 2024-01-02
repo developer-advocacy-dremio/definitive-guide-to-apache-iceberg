@@ -157,6 +157,8 @@ Now follow these direction to start up each service (each command should be run 
 
 - `docker-compose up spark-iceberg` this will open up a Spark container with a Jupyter Notebook server for writing pyspace scripts running on localhost:8080. Make sure to check the terminal for the token to access the notebook server.
 
+> Note the spark container has some folders mapped to a `/notebooks`, `/warehouse` and `/datasets` folder in the directory from which you initialize your environment. You can use this to share data with the container, as it can save files here that you can access and you can place files in the folder that the container will be able to access.
+
 - `docker-compose up flink-jobmanager` this will open up a flink instance acting as a job manager accessible on localhost:8081.
 
 - `docker-compose up flink-taskmanager` this will open up a flink instance acting as a task manager
