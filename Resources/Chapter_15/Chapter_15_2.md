@@ -1,6 +1,6 @@
-# Resources for Chapter 13.3
+# Resources for Chapter 15
 
-### 13.3.1.2 Data Producer
+### Data Producer
 
 ```py
 import boto3
