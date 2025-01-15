@@ -1,6 +1,6 @@
-# Chapter 12 Resources
+# Chapter 11 Resources
 
-### 12.2.2 Example of Streaming Iceberg with Flink
+### Example of Streaming Iceberg with Flink
 
 This job does the following:
 - Creates a Hive Catalog for the Table Environment
