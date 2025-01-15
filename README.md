@@ -25,3 +25,4 @@ Each chapter in book has a folder for supporting documents and resources. Not al
 - [Chapter 14](./Resources/Chapter_14/)
 - [Chapter 15](./Resources/Chapter_15/)
 - [Misc](./Resources/Misc/)
+- [Errata](./ERRATA.md)
