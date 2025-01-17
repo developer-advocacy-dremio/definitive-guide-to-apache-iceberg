@@ -1,4 +1,4 @@
-# Creating a Data Lakehouse Evironment for Experiementing with Apache Iceberg Locally
+# Creating a Data Lakehouse Environment for Experimenting with Apache Iceberg Locally
 
 **pre-requisites:**
 - Docker Installed
